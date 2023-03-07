@@ -77,17 +77,26 @@ body{
   position: relative;
 }
 
-.main__info {
+/* .main__info {
   max-width: 656px;
-  width: 100%;
   min-height: 300px;
+  width: 100%;
+  height: 100%;
 
-  background: #510D62;
+  background: #182D4B;
   background-image: url("media/bg.png"); 
-  background-position: right top;
+  background-position: fill;
   background-repeat: no-repeat;
-  background-size: 435px;
+  background-size: 100%;
   border-radius: 24px;
+} */
+
+.popup__image {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  margin-bottom: 20px;
 }
 
 .popup__logo {
@@ -251,15 +260,28 @@ details[open] summary:after {
   }
   .popup__subtitle{
     line-height: 40px;
-    
   }
 
   .popup__text {
     padding-bottom: 15px;
   }
 
+  .popup__terms {
+    margin-left: 24px;
+  }
+
+  .popup__image {
+    margin: 0px;
+  }
+
   .popup__bonus__header {
-    font-size: 24px;
+    margin-top: 10px;
+    line-height: 20px;
+    font-size: 18px;
+  }
+
+  .popup__list {
+    margin-left: 0px;
   }
 }
 
