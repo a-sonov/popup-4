@@ -235,13 +235,13 @@ details summary {
 }
 
 details summary:after {
-  content: url("media/more.png");
+  content: url("https://i.ibb.co/x8p6y8x/more.png");
   float: center;
   font-size: 18px;  
 }
 
 details[open] summary:after {
-  content: url("media/less.png");
+  content: url("https://i.ibb.co/GnmLzCT/less.png");
   float: center;
   font-size: 18px;
 }
