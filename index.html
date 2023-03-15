@@ -349,6 +349,11 @@
             .popup__list {
                 margin-left: 0px;
             }
+
+            .popup__table {
+                width: 100%;
+                vertical-align: top;
+            }
         }
     </style>
 </head>
@@ -359,7 +364,8 @@
             <div class="popup__content">
                 <div class="popup__top">
                     <div class="popup__top__text">Bônus de Boas-vindas 300%</div>
-                    <a href="https://rocketbets.com/en/promotions/0"><img class="popup__close" src="https://i.ibb.co/dkMbyzp/close.png"></a>
+                    <a href="https://rocketbets.com/en/promotions/0"><img class="popup__close"
+                            src="https://i.ibb.co/dkMbyzp/close.png"></a>
                 </div>
                 <div>
                     <!-- POPUP IMAGE HERE -->
@@ -378,53 +384,70 @@
                     </div>
 
                     <div class="popup__terms">
-                            <details>
-                                <summary> Read about terms and rules  </summary> 
-                                <div class="popup__list">
-                                    <p> O site RocketBets disponibiliza uma promoção "Bônus Expresso" para todos os Clientes, que pode ser usada para obter um bônus para uma aposta expressa. O valor do bônus depende do número de eventos na aposta expressa. Você pode receber um bônus máximo de 20%.
-                                        As condições para receber o bônus são simples: um cliente deve fazer uma aposta de 3 ou mais eventos com chances de pelo menos 1,5 e depois fazer uma aposta de 10 BRL. Imediatamente depois, as informações sobre o bônus aparecerão no cupom de apostas.
-                                    </p>
-                                    <p>A tabela de bônus é a seguinte:</p>
-                                    <ul >
-                                        <li>Recolhe uma aposta expressa de 3 eventos e pode receber um bônus de 5% (chances de aposta expressa adicionalmente multiplicadas por 1,05)</li>
-                                        <li>Recolhe uma aposta expressa de 5 eventos e pode receber um bônus de 10% (chances de aposta expressa adicionalmente multiplicadas por 1,10)</li>
-                                        <li>Recolhe uma aposta expressa de 7 eventos e pode receber um bônus de 15% (chances de aposta expressa adicionalmente multiplicadas por 1,15)</li>
-                                        <li>Recolhe uma aposta expressa de 8 eventos e pode receber um bônus de 20% (chances de aposta expressa adicionalmente multiplicadas por 1,20)</li>
-                                    </ul>
-                                    
-                                    <table class="popup__table">
-                                        <tr>
-                                          <th class="popup_tb_left">Quantidade de eventos na aposta expressa</th>
-                                          <th class="popup_tb_right">Tamanho de bônus (chance adicional)</th>
-                                        </tr>
-                                        <tr>
-                                          <td class="popup_tb_left">3</td>
-                                          <td class="popup_tb_right">5% (1.05)</td>
-                                        </tr>
-                                        <tr>
-                                          <td class="popup_tb_left">5</td>
-                                          <td class="popup_tb_right">10% (1.10)</td>
-                                        </tr>
-                                        <tr>
-                                          <td class="popup_tb_left">7</td>
-                                          <td class="popup_tb_right">15% (1.15)</td>
-                                        </tr>
-                                        <tr>
-                                          <td class="popup_tb_left">8</td>
-                                          <td class="popup_tb_right">20%(1.20)</td>
-                                        </tr>
-                                      </table>
-                                    <p>
-                                        Favor observar que este bônus não pode ser usado em conjunto com a promoção "Cashback". A casa de apostas se reserva o direito de cancelar o "Bônus da aposta expressa" caso seja detectada fraude ou mau uso deste recurso. A casa de apostas não será responsável se a promoção "Bônus da aposta expressa" não estiver disponível por razões técnicas. Em caso de violações identificadas dos termos e condições das apostas, a casa de apostas RocketBets reserva-se o direito de cancelar a promoção "Bônus da aposta expressa" ativada. Se, no momento da ativação do bônus, as chances sobre o resultado do evento estiverem incorretas, a casa de apostas RocketBets se reserva o direito de cancelar o bônus ativado.
-                                    </p>
-                                    <div class="popup__button__terms">
-                                        <a href="https://rocketbets.com/br/popup/login">Deposit</a>
-                                    </div>
+                        <details>
+                            <summary> Read about terms and rules </summary>
+                            <div class="popup__list">
+                                <p> O site RocketBets disponibiliza uma promoção "Bônus Expresso" para todos os
+                                    Clientes, que pode ser usada para obter um bônus para uma aposta expressa. O valor
+                                    do bônus depende do número de eventos na aposta expressa. Você pode receber um bônus
+                                    máximo de 20%.
+                                    As condições para receber o bônus são simples: um cliente deve fazer uma aposta de 3
+                                    ou mais eventos com chances de pelo menos 1,5 e depois fazer uma aposta de 10 BRL.
+                                    Imediatamente depois, as informações sobre o bônus aparecerão no cupom de apostas.
+                                </p>
+                                <p>A tabela de bônus é a seguinte:</p>
+                                <ul>
+                                    <li>Recolhe uma aposta expressa de 3 eventos e pode receber um bônus de 5% (chances
+                                        de aposta expressa adicionalmente multiplicadas por 1,05)</li>
+                                    <li>Recolhe uma aposta expressa de 5 eventos e pode receber um bônus de 10% (chances
+                                        de aposta expressa adicionalmente multiplicadas por 1,10)</li>
+                                    <li>Recolhe uma aposta expressa de 7 eventos e pode receber um bônus de 15% (chances
+                                        de aposta expressa adicionalmente multiplicadas por 1,15)</li>
+                                    <li>Recolhe uma aposta expressa de 8 eventos e pode receber um bônus de 20% (chances
+                                        de aposta expressa adicionalmente multiplicadas por 1,20)</li>
+                                </ul>
 
+                                <table class="popup__table">
+                                    <tr>
+                                        <th class="popup_tb_left">Quantidade de eventos na aposta expressa</th>
+                                        <th class="popup_tb_right">Tamanho de bônus (chance adicional)</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="popup_tb_left">3</td>
+                                        <td class="popup_tb_right">5% (1.05)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="popup_tb_left">5</td>
+                                        <td class="popup_tb_right">10% (1.10)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="popup_tb_left">7</td>
+                                        <td class="popup_tb_right">15% (1.15)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="popup_tb_left">8</td>
+                                        <td class="popup_tb_right">20%(1.20)</td>
+                                    </tr>
+                                </table>
+                                <p>
+                                    Favor observar que este bônus não pode ser usado em conjunto com a promoção
+                                    "Cashback". A casa de apostas se reserva o direito de cancelar o "Bônus da aposta
+                                    expressa" caso seja detectada fraude ou mau uso deste recurso. A casa de apostas não
+                                    será responsável se a promoção "Bônus da aposta expressa" não estiver disponível por
+                                    razões técnicas. Em caso de violações identificadas dos termos e condições das
+                                    apostas, a casa de apostas RocketBets reserva-se o direito de cancelar a promoção
+                                    "Bônus da aposta expressa" ativada. Se, no momento da ativação do bônus, as chances
+                                    sobre o resultado do evento estiverem incorretas, a casa de apostas RocketBets se
+                                    reserva o direito de cancelar o bônus ativado.
+                                </p>
+                                <div class="popup__button__terms">
+                                    <a href="https://rocketbets.com/br/popup/login">Deposit</a>
                                 </div>
-                                
-                            </details>
-                        </div>            
+
+                            </div>
+
+                        </details>
+                    </div>
                 </div>
             </div>
         </div>
